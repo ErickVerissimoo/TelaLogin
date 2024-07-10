@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    font-family: Times, Times New Roman, serif;
+   
+}
+
+body{
+    overflow: hidden;
+}
+
+.conteudo{
+    
+    position: relative;
+    top: 150px;
+}
+
+.cadastro{
+    position: relative;
+    top: 30px;
+
+}
+.botao{
+    display: flex;
+    position: relative;
+    top: 15px;
+    width: 55px;
+    height:25px;
+    font-size: 18px;
+    text-align: center;
+}
+
+h1{
+    font-size: 45px;
+}

@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="estilizacao.css">
 </head>
 <body>
-    <center>
+    <center class="conteudo">
         <h1>Login</h1>
-        <div>Email:</div>
-        <div>senha</div>
+        <div><label for="email">Entre com o email:</label>
+            <input type="email" id="email" name="email"></div>
+        <div><label for="password">Entre com a senha:</label>
+            <input type="password" size="20px" id="password" name="senha"></div>
+            <button class="botao">Entre</button>
+            <span class="cadastro"><a href="#">Ainda não é cadastrado? Faça seu cadastro clicando aqui</a>
+            </span>
     </center>
 </body>
 </html>
