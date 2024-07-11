@@ -40,7 +40,7 @@ body{
 .container {
     position: absolute;
     padding: 2rem;
-    background-image: url(imagens/rm218-bb-07.jpg);
+    background-image: url(imagens/comprimido.jpg);
     background-size: cover;
     opacity: 80%;
     z-index: 1;
@@ -86,7 +86,7 @@ body{
 .form select:-webkit-autofill:hover,
 .form select:-webkit-autofill:focus {
   border: 1px solid white;
-  -webkit-text-fill-color: aliceblue !important;
+  -webkit-text-fill-color: aliceblue;
   -webkit-box-shadow: transparent;
   transition: background-color 5000s ease-in-out 0s;
   border: 0;
@@ -100,7 +100,7 @@ body{
     height: 20px;
     padding-bottom: 60px;
     background: transparent;
-    background-image: url(imagens/pexels-pixelcop-3970396.jpg);
+    background-image: url(imagens/comprimido2.jpg);
     background-size: contain;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
