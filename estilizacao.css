@@ -124,9 +124,11 @@ span {
     color: transparent;
     transition: background 0.3s;
     top: 10px;
-}
+    text-decoration: none;}
+    
 span:hover {
     background: none; 
+    
 }
 
 .senha{
@@ -156,4 +158,16 @@ span:hover {
 		transform: translateY(30px);
 		font-size: 12px;
 	}
+}
+
+.cadastro{
+    text-decoration: none;
+}
+
+.cadstramento{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
 }
