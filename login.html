@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="estilizacao.css">
+    <title>Teste</title>
 </head>
-<body class="corpo">
-    <div class="overlay"></div>
+<body>
+    <a id="login"></a>
+    <a id="cadastro"></a>
+
     <div class="container">
-        <form class="form"> 
-        <h1 class="login">Login</h1>
-        <div><label for="email" class="email">Email</label>
-            <input type="email" id="email" name="email"></div>
-        <div><label for="password" class="senha">Senha</label>
-            <input type="password" size="20px" id="password" name="senha"></div>
-            <button class="botao" type="submit">Entre </button>
-        </form>
-            <span class="cadastro"><a href="cadastro.html" target="_blank" class="cadstramento">Ainda não é cadastrado? Faça seu cadastro clicando aqui</a>
-            </span>
-            </div>
+        <div class="form-container sign-in-container">
+            <form>
+                <h1>Login</h1>
+                <input type="text" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Entrar</button>
+                <p class="message">Não tem uma conta? <a href="#cadastro">Cadastrar</a></p>
+            </form>
+        </div>
+        <div class="form-container sign-up-container">
+            <form>
+                <h1>Cadastrar</h1>
+                <input type="text" placeholder="Nome" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Cadastrar</button>
+                <p class="message">Já tem uma conta?  <a href="#login">Entrar</a></p>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
