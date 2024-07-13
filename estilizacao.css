@@ -1,0 +1,146 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background: url('imagens/comprimido3.jpg') no-repeat center center fixed;
+    background-size: 1900px 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(2.5px);
+    moz-backdrop-filter: blur(2.5px);
+    background-color: transparent;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
+                0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    min-height: 480px;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    z-index: 2;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.sign-up-container {
+    left: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+#cadastro:target ~ .container .sign-in-container {
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: 1;
+}
+
+#cadastro:target ~ .container .sign-up-container {
+    transform: translateX(-100%);
+    opacity: 1;
+    z-index: 2;
+}
+
+#login:target ~ .container .sign-up-container {
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: 1;
+}
+
+#login:target ~ .container .sign-in-container {
+    transform: translateX(0%);
+    opacity: 1;
+    z-index: 2;
+}
+
+form {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+input {
+    background: #eee;
+    border: none;
+    padding: 12px 12px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+button {
+    border-radius: 100px;
+    border: 1px solid #ff4b2b;
+    background: #ff4b2b;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+p {
+    margin-top: 15px;
+}
+
+p.message {
+    font-size: 12px;
+}
+
+p.message a {
+    color: #ff4b2b;
+    text-decoration: none;
+}
+
+p.message a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(5, 5, 5, 0.22); 
+    padding: 10px 0; 
+    font-size: 25px;
+    color: #ffffff; 
+}
